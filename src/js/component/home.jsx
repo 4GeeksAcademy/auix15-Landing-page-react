@@ -12,8 +12,9 @@ import cardData from "./cardData";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
+      <div>
       {/* seccion del home */}
       <section id="home" className="home-section">
         <div className="container mt-4"></div>
@@ -34,13 +35,16 @@ const Home = () => {
           ))}
         </div>
       </section>
+      {/* seccion del about */}
       <section id="about">
         <About />
       </section>
+      {/* seccion del footer */}
       <section>
       <Footer/>
       </section>
     </div>
+    </>
   );
 };
 
